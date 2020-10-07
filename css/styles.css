@@ -1,0 +1,107 @@
+*{
+    margin: 0; /* reset css */
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+h1{
+    color: rgb(25, 63, 128);
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+h2{
+    margin: 0 auto;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: rgb(25, 63, 128);
+}
+#infos{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: rgba(240, 240, 240, 0.411);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+input[type="text"]{
+    border: 1px solid black;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 300px;
+    outline: 0;
+    margin: 0 auto;
+}
+
+input[type="button"]{
+    background-color: rgb(25, 63, 128);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    padding: 4px;
+    border-radius: 20px;
+    margin-top: 20px;
+    outline: 0;
+    margin: 0 auto;
+}
+#data-container{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+}
+#ChampionImage{
+    width: 400px;
+    margin: 10px auto;
+
+}
+
+#github{
+    position: absolute;
+    bottom:0;
+    width:100vw;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgb(25, 63, 128);
+}
+@media(max-width: 800px){
+    h1{
+        font-size: 7vw;
+    }
+    h2{
+        font-size: 4vw;
+        text-align: center;
+    } 
+    #infos{
+        flex-direction: column;
+        width: 50vw;
+    }
+    input[type="text"], input[type="button"]{
+        font-size: 3.5vw;
+        width: 40vw;
+
+    }
+    #data-container{
+        width: 50vw;
+        font-size: 3.5vw;
+    }
+    #ChampionImage{
+        width: 50vw;
+    }
+    #github{
+        font-size: 3.5vw;
+        width: 100%;
+    }
+}
