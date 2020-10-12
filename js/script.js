@@ -44,7 +44,7 @@ function useResponse(resp){ //Esta funcao eh responsavel por receber o json e ut
 }
 
 function searchName(){
-    let serch = document.getElementById('c-name').value
-    xhttp.open('GET', `https://api-lol.herokuapp.com/api/champions/${serch}`)
+    let search = document.getElementById('c-name').value
+    xhttp.open('GET', `https://api-lol.herokuapp.com/api/champions/${search}`)
     xhttp.send()
 }
